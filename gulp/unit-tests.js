@@ -14,6 +14,7 @@ var bowerDeps = wiredep({
 });
 
 var testFiles = bowerDeps.js.concat([
+  'app/scripts/**/*-module.js',
   'app/scripts/**/*.js',
   'test/unit/**/*.js'
 ]);

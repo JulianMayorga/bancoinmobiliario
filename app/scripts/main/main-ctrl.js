@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('inmobiliaria')
+angular.module('main')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       {
