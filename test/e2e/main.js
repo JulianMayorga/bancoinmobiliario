@@ -1,15 +1,13 @@
 'use strict';
 
-describe('The main view', function () {
+describe('Main', function () {
 
-  beforeEach(function () {
-    browser.get('http://localhost:3000');
-  });
+	beforeEach(function () {
+		browser.get('http://localhost:3000');
+	});
 
-  it('list more than 5 awesome things', function () {
-    element.all(by.repeater('awesomeThing in awesomeThings')).count().then(function(count) {
-      expect(count > 5).toBeTruthy();
-    });
-  });
+	it('should say Main in the title', function () {
+		expect(browser.getTitle()).toEqual('Main');
+	});
 
 });
