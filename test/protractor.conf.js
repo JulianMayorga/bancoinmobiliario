@@ -17,7 +17,7 @@ exports.config = {
   seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar', // Make use you check the version in the folder
 
   // Capabilities to be passed to the webdriver instance.
-  capabilities: capabilitiesy,
+  capabilities: capabilities,
 
   // Spec patterns are relative to the current working directly when
   // protractor is called.
