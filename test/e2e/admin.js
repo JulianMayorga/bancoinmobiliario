@@ -1,19 +1,16 @@
 'use strict';
 
+var AdminPage = require('./pages/admin.page.js');
+
 describe('Admin', function () {
+	var page;
 
 	beforeEach(function () {
-		browser.get('http://localhost:3000/#/admin');
+		page = new AdminPage();
 	});
 
 	it('should say Admin in the title', function () {
-		expect(browser.getTitle()).toEqual('Admin');
-	});
-
-	xdescribe('Given there are no registered users', function () {
-		it('should be able to register', function () {
-			
-		});
+		expect(page.title).toEqual('Admin');
 	});
 
 });
